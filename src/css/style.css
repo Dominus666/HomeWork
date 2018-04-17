@@ -1,0 +1,571 @@
+* {
+    box-sizing: border-box;
+}
+button{
+    outline: none;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.box-shadow {
+    box-shadow: 0 13px 27px rgba(0,0,0,0.15);
+}
+section {
+    padding: 80px 0;
+}
+.item {
+    width: 33.33333%;
+    float: left;
+    padding: 20px;
+    position: relative;
+}
+
+
+
+
+header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-bottom: 2px solid #00e9ba;
+}
+.logo {
+    float: left;
+/*    margin-top: 17.5px;*/
+}
+nav {
+    float: left;
+    margin-left: 100px;
+}
+nav a {
+    text-transform: uppercase;
+    line-height: 45px;
+    text-decoration: none;
+    color:black;
+}
+nav a:hover {
+    color:#00e9ba;
+}
+nav li{
+    display: inline-block;
+}
+nav li:not(:first-child) {
+    margin-left: 15px;
+}
+.navbar {
+    position: relative;
+}
+
+/*dropdown*/
+nav .dropdown li {
+    display: block;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #00e9ba;
+    cursor: pointer;
+    
+}
+.dropdown  {
+    position: absolute;
+    top:35px;
+    z-index: 10;
+    background-color: white;
+    display: none;
+    
+}
+.dropdown li:hover {
+    background-color:#00e9ba; 
+}
+.hover-drop:hover .dropdown {
+    display: block;
+}
+/*dropdown*/
+
+
+/*соц.линки*/
+.social {
+    float:right;
+}
+
+.social li {
+    display: inline-block;
+    margin-right: 30px;
+}
+.social a {
+    font-size: 30px;
+    color:black;
+}
+.social .fa-facebook:hover {
+    color:red;  
+}
+.social .fa-instagram:hover {
+    color:blue;
+}
+.social .fa-vk:hover {
+    color:green;
+}
+.social .fa-twitter:hover {
+    color:gray;
+}
+/*соц.линки*/
+
+/*канвас*/
+.remove-default-paddings {
+    margin: 0;
+    padding: 0;
+}
+.module-canvas-banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.module-canvas-banner img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+.module-canvas-banner canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/*канвас*/
+.title {
+    margin-bottom: 80px;
+    text-align: center;
+}
+h1 {
+   font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.item-img {
+    text-align: center; 
+   
+}
+.item-img img{
+    width: 100%;  
+}
+/*хит,новинка,начало 22февраля*/
+.hit::before {
+    content:"хит";
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom:5px;
+    background-color: yellow;
+    display: block;
+    position: absolute;
+    top:110px;
+    text-align:center;
+    font-size:30px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+    
+}
+.new::after {
+    content:"новинка";
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color: #02d623;
+    font-size: 30px;
+    position: absolute;
+    top:110px;
+    right: 20px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+}
+
+.circle-start {
+    padding-top:40px;
+    padding-bottom: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid #00cee9;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 20px;
+    background-color: #00cee9;
+    left:57%;
+    top:-50px;
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.4);
+    text-transform: uppercase;
+}
+
+
+/*хит,новинка,начало 22февраля*/
+
+
+.item-container {
+    padding: 20px;
+}
+.text {
+    font-weight:bolder;
+    font-size:20px;
+}
+.name {
+    text-align: right;
+    font-size: 26px;
+    color:#00e9ba;
+}
+.text, .name {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+
+.color-selector {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.color-selector li {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor:pointer;
+}
+.color-selector .white {
+    background-color: white;
+}
+.color-selector .black {
+    background-color: black;
+}
+.color-selector .red {
+    background-color: red;
+}
+.color-selector .blue {
+    background-color: blue;
+}
+
+
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+.button a {
+    padding-top:15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: green;
+    color:black;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block; 
+}
+.button a:hover {
+    background-color: black;
+    color:green;
+}
+section h2 {
+    text-align: center;
+    font-size:40px;
+    text-transform: uppercase;
+
+}
+
+
+.articles p {
+    font-size: 25px;
+    text-transform: lowercase;
+    line-height: 35px;
+    text-indent: 35px;
+}
+
+
+/*различные кнопки*/
+.button-all h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.button-all ul{
+    text-align: center;
+}
+.button-all li{
+    display: inline-block;
+    margin-left: 30px;
+}
+.button-all button {
+    width: 150px;
+    height: 50px;
+}
+.default-button button{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+.default-button button:hover {
+    background-color: black;
+    color:white;
+}
+.primary-button button{
+    background-color: blue;
+    color:white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+.primary-button button:hover {
+    background-color: white;
+    color:blue;
+}
+.button-warning button{
+    background-color: yellow;
+    color:white;
+    border: 1px solid yellow;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+.button-warning button:hover {
+    background-color: white;
+    color:yellow;
+}
+.button-error button{
+    background-color: red;
+    color:white;
+    border: 1px solid red;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+.button-error button:hover {
+    background-color: white;
+    color:red;
+}
+.button-success button{
+    background-color: green;
+    color:white;
+    border: 1px solid green;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+.button-success button:hover {
+    background-color: white;
+    color:green;
+}
+.button-small button{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+.button-small button:hover {
+    background-color: black;
+    color:white;
+}
+.button-large button{
+    width: 200px;
+    height: 70px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 30px;
+    box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
+}
+.button-large button:hover {
+    background-color: black;
+    color:white;
+}
+/*различные кнопки*/
+
+/*форма*/
+
+fieldset{
+    border:1px solid black;
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+.first-form {
+    text-align: center;
+}
+.first-form li {
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px; 
+}
+.first-form input{
+    height: 30px;
+    width: 250px;
+}
+.first-form label{
+    position: absolute;
+    transform: translate(-230px , 5px);
+    cursor: auto;
+    transition-duration: 0.5s;
+    
+}
+.first-form input:focus + label {
+    transform: translate(-250px , -20px);
+}
+
+.first-form input:not(:focus):valid + label{
+    transform: translate(-250px , -20px);
+}
+.first-form input:not(:placeholder-shown) + label{
+    transform: translate(-250px , -20px);
+}
+
+
+
+
+
+/*форма*/
+
+
+/*форма хобби*/
+.
+.hobbies {
+    position: relative;
+   
+}
+.hobbies input {
+    display: none;
+       
+}
+.hobbies ul{
+     padding-bottom: 40px;
+}
+.hobbies li{
+    display: inline-block;
+}
+.hobbies label {
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 150px;
+    display: inline-block;
+    
+    
+}
+.hobbies input:checked + label:before {
+    content: "\2714";
+    background-color: rgba(0, 128, 0, 0.69);
+    color:green;
+    text-align: left;
+    font-size:20px;
+    
+    
+}
+.hobbies input + label:before {
+    content:"\2718";
+    background-color: rgba(248, 3, 3, 0.79);
+    color:#8b0000;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    text-align: right;
+    font-size:20px;
+    border-radius: 3px;
+    box-shadow:inset 0px 3px 5px rgba(0,0,0,0.8);
+    transition-duration: 0.5s;
+
+}
+.hobbies input + label:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow:inset 0px -3px 5px rgba(0,0,0,0.8); 
+    float: left;
+    transform: translate(20px , 11px);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.hobbies input:checked + label:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    float: left;
+    transform: translate(45px , 11px );
+    cursor: pointer;
+    
+}
+
+.button-reset {
+    float: left;
+}
+.button-submit {
+    float: right;
+}
+.button-reset button{
+    margin-top: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+    box-shadow:0px 3px 5px rgba(0,0,0,0.8);
+    cursor: pointer;
+
+}
+.button-submit button {
+    margin-top: 30px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 30px;
+    box-shadow:0px 3px 5px rgba(0,0,0,0.8); 
+    cursor: pointer;
+}
+
+legend {
+    text-transform: uppercase;
+    margin-left: 15px;
+}
+.button-hobbi:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+fieldset {
+    border-radius: 7px;
+}
+.button-hobbi {
+    width: 800px;
+    margin: auto;
+}
+/*форма хобби*/
+
+
+
+
+
+
+
+
+
+
+
+
+
